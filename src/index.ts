@@ -4,6 +4,48 @@
 // }
 // console.log(obj.name)
 
+// let Array :[ name: string, age:number, passed:boolean]=[
+//     "hisham",
+//     23,
+//     true
+// ]
+
+// console.log(Array[0])
+
+// function isAdult( name:string,age:number){
+//     if(age>=18){
+//         return `${name} is adult and his age is ${age}`
+//     }else{
+//         return `${name} is not adult and his age below 18`
+//     }
+
+// }
+// console.log(isAdult("hisham",17))
+
+
+//default option
+// function greet(name:string = "manu"){
+//     return `happy birthday ${name}`
+// }
+// console.log(
+//     greet("fadil")
+// )
+// console.log(greet())
+
+
+// arrow function
+// const add =(a:number,b:number)=> {
+//     return a +b
+// }
+// console.log(add(1,3))
+
+
+const add=(x:number,y:number)=> x+y
+console.log(add(2,5))
+
+
+
+
 
 
 // interface Details {
@@ -184,20 +226,20 @@
 // }
 
 
-type User ={
-    name:string,
-    getUsername: ()=> string   //ivide string koduthath kond tahzhe ee function nte ullil enthenkilum return cheyyanam..ivide void aanel kodthenkil thaze error kanikkkum
-}
+// type User ={
+//     name:string,
+//     getUsername: ()=> string   //ivide string koduthath kond tahzhe ee function nte ullil enthenkilum return cheyyanam..ivide void aanel kodthenkil thaze error kanikkkum
+// }
 
-const UserDetails : User ={
-    name:"hisham",
-    getUsername(){
-       return "ali"
+// const UserDetails : User ={
+//     name:"hisham",
+//     getUsername(){
+//        return "ali"
         
-    }
+//     }
 
-}
-console.log(UserDetails.getUsername())
+// }
+// console.log(UserDetails.getUsername())
 
 
 
