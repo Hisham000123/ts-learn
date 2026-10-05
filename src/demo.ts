@@ -142,8 +142,8 @@ let data:Product [] = [{
 // console.log(getProduct(24))
 
 
-// function getSum(): number {
-//     let sum = data.reduce((total,p)=> total + p.price,0)
-//     return sum
-// }
-// console.log(getSum())
+function getSum(): number {
+return data.reduce((total,p)=> total + p.price,0)
+    
+}
+console.log(getSum())
