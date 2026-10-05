@@ -93,32 +93,32 @@ console.log(add(2,5))
 
 // #generics
 
-// type UserData ={
-//     name: string,
-//     age:number
-// }
-// let UserDetails: UserData={
-//     name: "manu",
-//      age: 43
-// }
+type UserData ={
+    name: string,
+    age:number
+}
+let UserDetails: UserData={
+    name: "manu",
+     age: 43
+}
 
-// type Admindata ={
-//     Adname: string,
-//     role: string
-// }
-// let AdminDetails:Admindata={
-//     Adname:"adhithya",
-//     role: "trainer"
-// }
+type Admindata ={
+    Adname: string,
+    role: string
+}
+let AdminDetails:Admindata={
+    Adname:"adhithya",
+    role: "trainer"
+}
 
-// function  getname <T>(details:T):T{
-//     return details
+function  getname <T>(details:T):T{
+    return details
     
-// }
-//  const userD = getname<UserData>(UserDetails)
-//     const adminD = getname<Admindata>(AdminDetails)
+}
+ const userD = getname(UserDetails)
+    const adminD = getname(AdminDetails)
 
-//     console.log(adminD.Adname)
+    console.log(adminD.Adname)
 
 
 

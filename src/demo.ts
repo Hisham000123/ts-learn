@@ -39,12 +39,111 @@
 // console.log(Check(-34))
 
 
-function Large(a:number,b:number){
-    if(a>b){
-        return `${a} is greater`
-    }else{
-        return`${b} is greater`
-    }
-}
-console.log(Large(0,-64))
+// function Large(a:number,b:number){
+//     if(a>b){
+//         return `${a} is greater`
+//     }else{
+//         return`${b} is greater`
+//     }
+// }
+// console.log(Large(0,-64))
 
+
+// function Temp(cel:number ){
+//     const f = (cel*(9/5))+32
+//     return f;
+// }
+// console.log(Temp(1))
+
+
+
+// type User = {
+//   id: number;
+//   name: string;
+//   email: string;
+//   isAdmin: boolean;
+// };
+
+// const users: User[] = [
+//   {
+//     id: 1,
+//     name: "Hisham",
+//     email: "hisham@gmail.com",
+//     isAdmin: true,
+//   },
+//   {
+//     id: 2,
+//     name: "Rahul",
+//     email: "rahul@gmail.com",
+//     isAdmin: false,
+//   },
+// ];
+
+// function findUser(id: number): string | undefined {
+
+//     let data= users.find((user)=> user.id === id)
+//     return data?.name
+    
+
+
+// }
+
+// console.log(findUser(1))
+
+
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  category: string;
+}
+
+let data:Product [] = [{
+    id: 2,
+    name:"manu",
+    price:87,
+    category:"sports"
+
+},
+{
+    id:3,
+    name:"jenu",
+    price:23,
+    category:"arts"
+},
+{
+    id:4,
+    name:"jenus",
+    price:13,
+    category:"arts"
+},{
+    id:1,
+    name:"ali",
+    price:3,
+    category:"sports"
+},
+
+]
+
+
+// function findProduct(id:number): string | undefined {
+//    let User = data.find((p)=> p.id=== id)
+//     return User?.name
+// }
+// console.log(findProduct(2))
+
+// function getProduct(pr:number):Product [] | undefined{
+
+//    let Users= data.filter((p)=>p.price >= pr)
+//    return Users
+
+// }
+
+// console.log(getProduct(24))
+
+
+// function getSum(): number {
+//     let sum = data.reduce((total,p)=> total + p.price,0)
+//     return sum
+// }
+// console.log(getSum())
