@@ -39,21 +39,10 @@
 // console.log(Check(-34))
 
 
-// function Large(a:number,b:number){
-//     if(a>b){
-//         return `${a} is greater`
-//     }else{
-//         return`${b} is greater`
-//     }
-// }
-// console.log(Large(0,-64))
 
 
-// function Temp(cel:number ){
-//     const f = (cel*(9/5))+32
-//     return f;
-// }
-// console.log(Temp(1))
+
+
 
 
 
@@ -142,8 +131,11 @@ let data:Product [] = [{
 // console.log(getProduct(24))
 
 
-function getSum(): number {
-return data.reduce((total,p)=> total + p.price,0)
+// function getSum(): number {
+// return data.reduce((total,p)=> total + p.price,0)
     
-}
-console.log(getSum())
+// }
+// console.log(getSum())
+
+
+
