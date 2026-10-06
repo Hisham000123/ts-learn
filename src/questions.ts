@@ -96,3 +96,139 @@ function Lstring( name:string): number {
     return p
 }
 console.log(Lstring("hisham"))
+
+----------------------------------------------------------------------------------------
+
+
+interface User {
+    name?:string,
+    course:string 
+}
+
+let user1 : User ={
+    name: "ali",
+    course: "mern"
+
+}
+let user2 : User ={
+    
+    course: "django"
+
+}
+
+console.log(user1.course)
+
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+function Country(name: string = "india"){
+    return ` Welcome to ${name}`
+}
+
+console.log(Country("russia"))
+
+console.log(Country())
+
+
+
+
+ interface User {
+    name:string,
+    age?:number
+}
+
+let user1 : User ={
+    name: "ali",
+    age: 23
+
+}
+let user2 : User ={
+    
+    name: "manu"
+
+}
+
+console.log(user2.name)
+
+
+
+function Discount (  x: number, a : number = 10):number {
+
+    const dis =  x - a
+    return dis 
+
+}
+
+console.log(Discount(66))
+
+
+
+
+function Pdis(a:number, d: number = 10): number {
+    const p = a - (a * d/100)
+    return p
+}
+console.log(Pdis(1000))
+
+----------------------------------------------------------------------------
+
+const add=(a: number,b: number) =>{
+    return a+ b
+}
+console.log(add(2,4))
+
+
+
+const Mul=(a: number,b: number) =>{
+    return a * b
+}
+console.log(Mul(2,4))
+
+
+const Check=(a:number): string =>{
+    if(a%2==0){
+        return "number is even"
+    }else{
+        return "number is odd"
+    }
+}
+
+console.log(Check(10))
+
+
+const upper=(s: string)=>{
+    const p= s.toUpperCase()
+    return  p
+     
+}
+console.log(upper("hisham"))
+
+
+
+
+let Pass=(a: number)=>{
+    if(a>=20){
+        return "student passed"
+    }else{
+        return "student failed"
+    }
+}
+console.log(Pass(23))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
