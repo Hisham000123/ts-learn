@@ -40,8 +40,8 @@
 // console.log(add(1,3))
 
 
-const add=(x:number,y:number)=> x+y
-console.log(add(2,5))
+// const add=(x:number,y:number)=> x+y
+// console.log(add(2,5))
 
 
 
@@ -93,32 +93,32 @@ console.log(add(2,5))
 
 // #generics
 
-type UserData ={
-    name: string,
-    age:number
-}
-let UserDetails: UserData={
-    name: "manu",
-     age: 43
-}
+// type UserData ={
+//     name: string,
+//     age:number
+// }
+// let UserDetails: UserData={
+//     name: "manu",
+//      age: 43
+// }
 
-type Admindata ={
-    Adname: string,
-    role: string
-}
-let AdminDetails:Admindata={
-    Adname:"adhithya",
-    role: "trainer"
-}
+// type Admindata ={
+//     Adname: string,
+//     role: string
+// }
+// let AdminDetails:Admindata={
+//     Adname:"adhithya",
+//     role: "trainer"
+// }
 
-function  getname <T>(details:T):T{
-    return details
+// function  getname <T>(details:T):T{
+//     return details
     
-}
- const userD = getname(UserDetails)
-    const adminD = getname(AdminDetails)
+// }
+//  const userD = getname(UserDetails)
+//     const adminD = getname(AdminDetails)
 
-    console.log(adminD.Adname)
+//     console.log(adminD.Adname)
 
 
 
@@ -241,6 +241,58 @@ function  getname <T>(details:T):T{
 // }
 // console.log(UserDetails.getUsername())
 
+
+
+
+// interface User {
+//     id: number,
+//     name:string,
+//     course:string
+// }
+
+// let user1: User ={
+//     id:1,
+//     name:"manu",
+//     course:"mern"
+// }
+// const user2: User ={
+//     id:2,
+//     name:"finu",
+//     course:"django"
+// }
+
+// function UpdateUser( data:Partial<User>){
+//     user1 ={
+//         ...user1,
+        
+//         ... data
+        
+
+//     }
+// }
+// console.log(user1)
+// UpdateUser({name:"fadil"})
+
+// console.log(user1)
+
+
+
+
+interface data{
+    name:string,
+    age:number,
+    course:string
+}
+
+
+
+let userData: Partial <Pick <data, "name"| "course">>={
+    name:"hisham",
+    course:"mern"
+
+}
+
+console.log(userData.course)
 
 
 
