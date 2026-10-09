@@ -32,31 +32,45 @@ const arr =[
 ]
 
 
-// let getProducts=(id)=>{  
-//         return arr.find((pro)=> pro.id === id)?.name       
-// }
-// console.log(getProducts(6))
-
-// let calculateDis=(name)=>{
-//     return arr.find((p)=> p.name ===name).price-10
-// }
-// console.log(calculateDis("pen"))
-
-
-// console.log(arr[0].name)
-// console.log(arr[2].price)
+let getProducts=(id)=>{  
+        return arr.find((pro)=> pro.id === id)?.name       
+}
+console.log(getProducts(6))
 
 
 
 
-// let getProducts=(id)=>{  
-//         let store= arr.find((pro)=> pro.id === id)
-//         return store
+let calculateDis=(name)=>{
+    return arr.find((p)=> p.name ===name).price-10
+}
+console.log(calculateDis("pen"))
+
+
+
+
+
+
+console.log(arr[0].name)
+console.log(arr[2].price)
+
+
+
+
+
+
+
+let getProducts=(id)=>{  
+        let store= arr.find((pro)=> pro.id === id)
+        return store
         
 
-// }
-// console.log(getProducts(5).name)
-// console.log(getProducts(5).price)
+}
+console.log(getProducts(5).name)
+console.log(getProducts(5).price)
+
+
+
+
 
 
 
