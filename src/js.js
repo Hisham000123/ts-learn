@@ -58,15 +58,15 @@ console.log(arr[2].price)
 
 
 
-
 let getProducts=(id)=>{  
         let store= arr.find((pro)=> pro.id === id)
         return store
-        
+   
 
 }
-console.log(getProducts(5).name)
-console.log(getProducts(5).price)
+ let product = getProducts(5)
+console.log(product.name)
+console.log(product.price)
 
 
 
